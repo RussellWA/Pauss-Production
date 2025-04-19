@@ -1,0 +1,44 @@
+.fading-text-container {
+    display: inline-block; /* To contain the width of the text */
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-out;
+}
+
+/* Slide In/Out */
+/* .fade-enter {
+     transform: translateX(-100%);
+     opacity: 0;
+   }
+   
+   .fade-enter-active {
+     transform: translateX(0);
+     opacity: 1;
+     transition: transform 500ms ease, opacity 500ms ease;
+   }
+   
+   .fade-exit {
+     transform: translateX(0);
+     opacity: 1;
+   }
+   
+   .fade-exit-active {
+     transform: translateX(100%);
+     opacity: 0;
+     transition: transform 500ms ease, opacity 500ms ease;
+   } */
