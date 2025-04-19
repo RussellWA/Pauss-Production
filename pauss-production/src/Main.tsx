@@ -6,7 +6,7 @@ import Home from './views/Home.tsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
-  <StrictMode>
-    <Home/>
-  </StrictMode>
+    <StrictMode>
+        <Home/>
+    </StrictMode>
 );
