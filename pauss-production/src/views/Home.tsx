@@ -1,8 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import WordsTransition from '../components/FadingText/WordsTransition';
-import '../css/WordsTransition.css';
+import WordsTransition from '../components/WordsTransition/WordsTransition';
 
 const Home = () => {
     // Typewriter
@@ -10,7 +9,7 @@ const Home = () => {
     const [ typedLength, setTypedLength ] = useState(0);
     const firstText = "👋 Hi, we're "
     
-    // CSS Transition
+    // Words Transition
     const words = ['websites', 'games', 'digital experiences'];
 
     const handleType = () => {
@@ -77,13 +76,13 @@ const Home = () => {
                     </span>
                 </Typography>
                 <Typography
-                    sx={{
+                    sx={{   
                         fontFamily: 'Poppins',
                         fontSize: '28px'
                     }}
                 >
                     We are a small team of friends creating {' '}
-                    {/* <WordsTransition words={words} interval={2000}/> */}
+                    <WordsTransition items={words}/>
                 </Typography>
             </Box>
         </Box>
