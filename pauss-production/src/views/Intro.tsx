@@ -23,7 +23,6 @@ const Intro = () => {
         })
     };
 
-
     return (
         <>
             <Box
@@ -76,7 +75,7 @@ const Intro = () => {
                     }}
                 >
                     We are a small team of friends creating {' '}
-                    <WordsTransition items={words}/>
+                    <WordsTransition items={words} timeout={500} duration={3000}/>
                 </Typography>
             </Box>
         </>

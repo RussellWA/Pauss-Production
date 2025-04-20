@@ -4,23 +4,30 @@ import './WordsTransition.css';
 
 interface WordsTransitionProps {
     items: string[];
+    timeout: number;
+    duration: number;
 }
 
-const WordsTransition: React.FC<WordsTransitionProps> = ({ items }) => {
-    const [state, toggle] = useTransitionState({ timeout: 750, preEnter: true });
-    const [index, setIndex] = useState(0);
+const WordsTransition: React.FC<WordsTransitionProps> = ({ items, timeout, duration }) => {
+    const [ state, toggle ] = useTransitionState({ timeout: timeout });
+    const [ index, setIndex ] = useState(0);
+
+    useEffect(() => {
+        if (state.status === "exited") {
+            setIndex((prev) => (prev + 1) % items.length);
+            toggle();
+        }
+    }, [state.status]);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            toggle();
-            setTimeout(() => {
-                setIndex((prev) => (prev + 1) % items.length);
+            if (state.status === "entered") {
                 toggle();
-            }, 750);
-        }, 2500);
-        
+            }
+        }, duration);
+    
         return () => clearInterval(interval);
-    }, []);
+    }, [state.status]);
 
     return (
         <div className={`example ${state.status}`}>

@@ -1,5 +1,5 @@
 Typewriter docs
 https://www.npmjs.com/package/react-simple-typewriter
 
-Transition Group docs
-https://reactcommunity.org/react-transition-group/
+Transition docs
+https://github.com/szhsin/react-transition-state
