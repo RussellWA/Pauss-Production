@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import WordsTransition from "../components/WordsTransition/WordsTransition";
+import WordsTransition from "../../components/WordsTransition/WordsTransition";
 import React, { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -28,9 +28,9 @@ const Intro = () => {
             <Box
                 component="img"
                 alt='pauss logo'
-                src='/assets/Logo Perusahaan@4x.png'
+                src='/assets/Pauss.png'
                 sx={{
-                    width: '33%'
+                    width: '25%'
                 }}
             />
 
