@@ -2,6 +2,8 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 
 
+
+
 const ProjectGallery = () => {
     return (
 
@@ -52,7 +54,7 @@ const ProjectGallery = () => {
                     </Box>
 
                     <Box>
-                        
+
                     </Box>
 
                 </Box>
