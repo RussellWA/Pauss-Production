@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import Intro from './Sections/Intro';
+import Intro from './components/Intro';
 import Navbar from '../../components/Navbar/Navbar';
-import Projects from './Sections/Project';
+import Projects from './components/Project';
 
 const Home = () => {
 

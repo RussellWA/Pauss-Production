@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Homepage/Home';
 import React from 'react';
-import ProjectGallery from './projectGallery/projectGallery';
+import ProjectGallery from './ProjectGallery/ProjectGallery';
 
 function App() {
   return (

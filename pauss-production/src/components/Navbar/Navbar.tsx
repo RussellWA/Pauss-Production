@@ -1,28 +1,36 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
+import { useScrollStore } from "../../pages/Homepage/stores/useScrollStore";
 
 const Navbar = () => {
 
+    const { hasHitTop } = useScrollStore();
     
     return (
         <Box
             sx={{
                 display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'end',
                 alignItems: 'center',
-                marginTop: '20px',
-                marginX: '50px',
+                top: 0,
+                paddingX: '50px',
+                paddingY: hasHitTop ? 1 : '20px',
+                justifyContent: hasHitTop ? 'space-between' : 'end',
+                position: hasHitTop ? 'sticky' : 'static',
+                backgroundColor: hasHitTop ? 'white' : 'transparent',
             }}
         >
-            {/* <Box
+            {/* Logo */}
+            <Box
                 component="img"
                 alt='pauss logo'
                 src='/assets/Pauss.png'
                 sx={{
+                    display: hasHitTop ? 'block' : 'none',
                     width: '5%'
                 }}
-            /> */}
+            />
+
+            {/* Navigations */}
             <Box
                 sx={{
                     display: 'flex',

@@ -10,8 +10,6 @@
 html, body {
     height: 100%; /* Take up the full height of the viewport */
     width: 100%;
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
     background: #FFF9F0;
 }
 
