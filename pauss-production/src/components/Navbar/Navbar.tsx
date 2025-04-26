@@ -2,26 +2,27 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 
 const Navbar = () => {
+
+    
     return (
         <Box
             sx={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'space-between',
+                justifyContent: 'end',
                 alignItems: 'center',
                 marginTop: '20px',
                 marginX: '50px',
-                backgroundColor: 'white'
             }}
         >
-            <Box
+            {/* <Box
                 component="img"
                 alt='pauss logo'
                 src='/assets/Pauss.png'
                 sx={{
                     width: '5%'
                 }}
-            />
+            /> */}
             <Box
                 sx={{
                     display: 'flex',
