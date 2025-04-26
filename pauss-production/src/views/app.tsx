@@ -1,8 +1,8 @@
 // App.tsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Homepage/Home';
-import ProjectGallery from './projectGallery/projectGallery';
 import React from 'react';
+import ProjectGallery from './projectGallery/projectGallery';
 
 function App() {
   return (

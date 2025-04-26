@@ -118,4 +118,4 @@ const ProjectGallery = () => {
     )
 }
 
-export default ProjectGallery;
+export default ProjectGallery;
